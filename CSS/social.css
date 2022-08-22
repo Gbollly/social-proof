@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --Vd-magenta: hsl(300, 43%, 22%);
+    --S-pink:hsl(333, 80%, 67%);
+    --L-magenta:hsl(300, 24%, 96%);
+    --DG-magenta: hsl(303, 10%, 53%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+    /* background-size: cover; */
+}
+
+.container{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 6em 12em;
+}
+
+.upper-sec{
+    display: flex;
+    width: 100%;
+}
+
+.left-sec{
+    width: 50%;
+    padding-right: 6em;
+}
+
+.left-sec > h1{
+    font-size: 4em;
+    color: var(--Vd-magenta);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.left-sec > p{
+    line-height: 1.5;
+    font-size: 18px;
+    color: var(--Vd-magenta);
+    padding-right: 3em;
+}
+
+.right-sec{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 40px;
+}
+
+.review > p{
+    margin-left:25px ;
+    font-weight: 700;
+    color: var(--Vd-magenta);
+    line-height: 1.5;
+}
+
+.rate{
+    display: flex;
+    width: 70%;
+    background-color: var(--L-magenta);
+    /* margin: 20px 0; */
+    padding: 15px 35px;
+    border-radius: 10px;
+}
+
+.rate1{
+    margin: 15px 4em;
+}
+
+.rate0{
+    margin-right: 8em;
+}
+
+.lower-sec{
+    display: flex;
+    width: 100%;
+    padding-top: 4em ;
+    column-gap: 30px;
+}
+
+.testimonial{
+    background-color: var(--Vd-magenta);
+    color: hsl(0, 0%, 100%);
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    /* margin-top: 4em; */
+}
+
+.details{
+    float: right;
+    margin-right:160px;
+    line-height: 1.3;
+    font-size: 16px;
+}
+
+.verify{
+    color:var(--S-pink) ;
+}
+
+.avatar{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.testify > p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.avatar > img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.test2{
+    margin-top: 1.5em;
+}
+
+.test3{
+    margin-top: 3em;
+}
+
+
+@media (max-width:375px) {
+
+    body{
+        background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+        
+    }
+
+    .container{
+        padding: 5em 1.5em;
+    }
+
+    .upper-sec{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .right-sec{
+        width: 100%;
+        text-align: center;
+        display: inline;
+    }
+
+    .rate{
+        display: block;
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-sec{
+        width: 100%;
+        padding: 0;
+        /* text-align: center; */
+    }
+
+    .left-sec > h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .left-sec > p{
+        text-align: center;
+        padding: 0;
+    }
+
+    .lower-sec{
+        display: block;
+    }
+
+    .details{
+        margin-right: 105px;
+    }
+ 
+
+    .review{
+        margin-top:5px;
+    }
+
+    .test3{
+        margin-top: 1.5em;
+    }
+}
